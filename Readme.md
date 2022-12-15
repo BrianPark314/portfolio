@@ -1,10 +1,11 @@
-# My personal web site
-<img src="assets/img/logo/bootstrap.png" alt="Bootstrap-logo" with="300"/>
-<img src="assets/img/logo/fastapi.png" alt="fastapi-logo" with="300"/>
+# My portfolio
+<!-- <img src="assets/img/logo/bootstrap.png" alt="Bootstrap-logo" with="300"/><img src="assets/img/logo/fastapi.png" alt="fastapi-logo" with="300"/> -->
+
+![alt bootstrap-logo](https://github.com/BaptisteUrgell/portfolio/blob/main/assets/img/logo/bootstrap.png) ![alt fastapi-logo](https://github.com/BaptisteUrgell/portfolio/blob/main/assets/img/logo/fastapi.png)
 
 ## Overview
 
-This is my personal web site, you can reash it at [http://1xj2p6if.fbxos.fr:32769/](http://1xj2p6if.fbxos.fr:32769/)
+This is my personal web site, you can reash it at [http://1xj2p6if.fbxos.fr:32769/](http://1xj2p6if.fbxos.fr:32769/).
 This project use [FastAPI](https://fastapi.tiangolo.com/) framework to create the API and [Bootstrap](https://getbootstrap.com/) for the design. 
 
 ## Installation
