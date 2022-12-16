@@ -1,7 +1,9 @@
 # My portfolio
-<!-- <img src="assets/img/logo/bootstrap.png" alt="Bootstrap-logo" with="300"/><img src="assets/img/logo/fastapi.png" alt="fastapi-logo" with="300"/> -->
+<img src="assets/img/logo/bootstrap.png" alt="Bootstrap-logo" width="100" />
+<img src="assets/img/logo/fastapi.png" alt="fastapi-logo" width="200"/> 
 
-![alt bootstrap-logo](https://github.com/BaptisteUrgell/portfolio/blob/main/assets/img/logo/bootstrap.png) ![alt fastapi-logo](https://github.com/BaptisteUrgell/portfolio/blob/main/assets/img/logo/fastapi.png)
+<!-- ![alt bootstrap-logo](https://github.com/BaptisteUrgell/portfolio/blob/main/assets/img/logo/bootstrap.png) 
+![alt fastapi-logo](https://github.com/BaptisteUrgell/portfolio/blob/main/assets/img/logo/fastapi.png) -->
 
 ## Overview
 
