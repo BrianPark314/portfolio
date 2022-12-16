@@ -1,18 +1,9 @@
 # My portfolio
 
-<style>
+<div align="center">
+    <img src="https://github.com/BaptisteUrgell/portfolio/blob/main/assets/img/github.svg" alt="css-in-readme">
+</div>
 
-img {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    margin-left: 10%;
-}
-</style>
-
-<img src="assets/img/logo/bootstrap.png" alt="Bootstrap-logo"/>
-<img src="assets/img/logo/fastapi.png" alt="fastapi-logo"/> 
 
 ## Overview
 
