@@ -11,7 +11,7 @@ from googleapiclient.errors import HttpError
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse, PlainTextResponse
+from fastapi.responses import HTMLResponse, PlainTextResponse, FileResponse
 from fastapi import Form, Request
 
 
@@ -45,12 +45,20 @@ def portfolio_mastermind(request: Request):
     return templates.TemplateResponse("portfolio-mastermind.html", context={'request': request})
    
 @app.get("/daily-coding-problem", response_class=HTMLResponse)
-def portfolio_dailycodingproblem(request: Request):
+def portfolio_dcp(request: Request):
     return templates.TemplateResponse("portfolio-daily-coding-problem.html", context={'request': request})
 
 @app.get("/euromillions-api", response_class=HTMLResponse)
-def portfolio_dailycodingproblem(request: Request):
+def portfolio_euromillions(request: Request):
     return templates.TemplateResponse("portfolio-euromillions-api.html", context={'request': request})
+
+@app.get("/homer-bot", response_class=HTMLResponse)
+def portfolio_homerbot(request: Request):
+    return templates.TemplateResponse("portfolio-homer-bot.html", context={'request': request})
+
+@app.get("/homer-bot-paper", response_class=FileResponse)
+def download_paper(request: Request):
+    return "assets/file/PFE.pdf"#FileResponse(path="assets/file/", filename="PFE.pdf", media_type='pdf')
 
 @app.post("/contact", response_class=PlainTextResponse)
 def send_email(
