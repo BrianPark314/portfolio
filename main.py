@@ -64,6 +64,10 @@ def download_paper(request: Request):
 def download_cv(request: Request):
     return "assets/file/cv_baptiste_urgell.pdf"
 
+@app.get("/asian-hornet", response_class=HTMLResponse)
+def portfolio_hornet(request: Request):
+    return templates.TemplateResponse("portfolio-asian-hornet.html", context={'request': request})
+
 
 @app.post("/contact", response_class=PlainTextResponse)
 def send_email(
