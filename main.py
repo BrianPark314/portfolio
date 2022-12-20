@@ -58,7 +58,12 @@ def portfolio_homerbot(request: Request):
 
 @app.get("/homer-bot-paper", response_class=FileResponse)
 def download_paper(request: Request):
-    return "assets/file/PFE.pdf"#FileResponse(path="assets/file/", filename="PFE.pdf", media_type='pdf')
+    return "assets/file/PFE.pdf"
+
+@app.get("/curriculum-vitae", response_class=FileResponse)
+def download_cv(request: Request):
+    return "assets/file/cv_baptiste_urgell.pdf"
+
 
 @app.post("/contact", response_class=PlainTextResponse)
 def send_email(
