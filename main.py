@@ -68,6 +68,9 @@ def download_cv(request: Request):
 def portfolio_hornet(request: Request):
     return templates.TemplateResponse("portfolio-asian-hornet.html", context={'request': request})
 
+@app.get("/surfrider", response_class=HTMLResponse)
+def portfolio_surfrider(request: Request):
+    return templates.TemplateResponse("portfolio-surfrider.html", context={'request': request})
 
 @app.post("/contact", response_class=PlainTextResponse)
 def send_email(
