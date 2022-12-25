@@ -7,7 +7,7 @@
 
 ## Overview
 
-This is my personal web site, you can reash it at [http://1xj2p6if.fbxos.fr:32769/](http://1xj2p6if.fbxos.fr:32769/).
+This is my personal web site, you can reash it at [http://urgell.freeboxos.fr:32769/](http://urgell.freeboxos.fr:32769/).
 This project use [FastAPI](https://fastapi.tiangolo.com/) framework to create the API and [Bootstrap](https://getbootstrap.com/) for the design. 
 
 ## Installation
