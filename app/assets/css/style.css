@@ -1298,6 +1298,11 @@ section {
   background: var(--theme-color-light);
 }
 
+.contact h3 {
+    margin-top: 24px;
+    text-align: center;
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);

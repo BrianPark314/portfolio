@@ -2,6 +2,9 @@ import base64
 import os
 from email.message import EmailMessage
 
+#for aws
+from mangum import Mangum
+
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request as gg_Request
@@ -21,7 +24,7 @@ CONTACTS = 'baptiste.u@gmail.com'
 URL_DOC = "/redoc"
 URL_SWAGGER = "/docs"
 
-templates = Jinja2Templates("templates")
+templates = Jinja2Templates("./app/templates")
 
 app = FastAPI(
     title = TITLE,
@@ -30,7 +33,9 @@ app = FastAPI(
     docs_url = URL_SWAGGER
 )
 
-app.mount("/assets", StaticFiles(directory="./assets"), name="assets")
+handler = Mangum(app)
+
+app.mount("/assets", StaticFiles(directory="./app/assets"), name="assets")
 
 @app.get("/", response_class=HTMLResponse)
 def serve_home(request: Request):
