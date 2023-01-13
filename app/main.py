@@ -1,5 +1,4 @@
-import base64
-import os
+import base64, os
 from email.message import EmailMessage
 
 #for aws
@@ -17,8 +16,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse, PlainTextResponse, FileResponse
 from fastapi import Form, Request
 
-
-
+MAIN_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 TITLE = 'Portfolio'
 CONTACTS = 'baptiste.u@gmail.com'
 URL_DOC = "/redoc"
@@ -63,11 +61,11 @@ def portfolio_homerbot(request: Request):
 
 @app.get("/homer-bot-paper", response_class=FileResponse)
 def download_paper(request: Request):
-    return "assets/file/PFE.pdf"
+    return os.path.join(MAIN_DIRECTORY, "assets", "file", "PFE.pdf")
 
 @app.get("/curriculum-vitae", response_class=FileResponse)
 def download_cv(request: Request):
-    return "assets/file/cv_baptiste_urgell.pdf"
+    return os.path.join(MAIN_DIRECTORY, "assets", "file", "cv_baptiste_urgell.pdf")
 
 @app.get("/asian-hornet", response_class=HTMLResponse)
 def portfolio_hornet(request: Request):
