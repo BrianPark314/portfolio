@@ -59,6 +59,8 @@
               <li><a href="/homer-bot">Homer Bot</a></li>
               <li><a href="/asian-hornet">Asian Hornet</a></li>
               <li><a href="/surfrider">Surfrider</a></li>
+              <li><a href="/everimpact">Everimpact°</a></li>
+
               <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -330,124 +332,137 @@
 
     <!-- ======= My Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
-      <div class="container">
+        <div class="container">
 
-        <div class="section-title">
-          <span>My Portfolio</span>
-          <h2>My Portfolio</h2>
-          <p>“You are not your resume, you are your work.” -Seth Godin</p>
+            <div class="section-title">
+                <span>My Portfolio</span>
+                <h2>My Portfolio</h2>
+                <p>“You are not your resume, you are your work.” -Seth Godin</p>
+            </div>
+
+            <ul id="portfolio-flters" class="d-flex justify-content-center">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-card">AI</li>
+                <li data-filter=".filter-web">Challenge</li>
+            </ul>
+
+            <div class="row portfolio-container">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-img">
+                        <a href="/golf-booking-app" class="details-link" title="More Details">
+                            <img src="assets/img/portfolio/golf-booking-app/portfolio-1.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Golf Booking App</h4>
+                        <p>App</p>
+                        <!-- <a href="assets/img/portfolio/golf-booking-app/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Golf Booking App"><i class="bx bx-plus"></i></a> -->
+                        <a href="/golf-booking-app" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-img">
+                        <a href="/mastermind" class="details-link" title="More Details">
+                            <img src="assets/img/portfolio/mastermind/mastermind.png" width="500px" height="500px" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Mastermind</h4>
+                        <p>App</p>
+                        <!-- <a href="assets/img/portfolio/mastermind/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Mastermin"><i class="bx bx-plus"></i></a> -->
+                        <a href="/mastermind" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-img">
+                        <a href="/euromillions-api" class="details-link" title="More Details">
+                            <img src="assets/img/logo/euromillions.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>EuroMillions API</h4>
+                        <p>AI</p>
+                        <!-- <a href="assets/img/portfolio/euromillions-api/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="EuroMillions API"><i class="bx bx-plus"></i></a> -->
+                        <a href="/euromillions-api" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-img">
+                        <a href="/daily-coding-problem" class="details-link" title="More Details">
+                            <img src="assets/img/logo/daily-coding-problem.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Daily Coding Problem</h4>
+                        <p>Challenge</p>
+                        <!-- <a href="assets/img/portfolio/daily-coding-problem/portfolio-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Daily Coding Problem"><i class="bx bx-plus"></i></a> -->
+                        <a href="/daily-coding-problem" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card filter-app">
+                    <div class="portfolio-img">
+                        <a href="/homer-bot" class="details-link" title="More Details">
+                            <img src="assets/img/portfolio/homer-bot/portfolio-1.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Homer Bot</h4>
+                        <p>AI</p>
+                        <!-- <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a> -->
+                        <a href="/homer-bot" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-img">
+                        <a href="/asian-hornet" class="details-link" title="More Details">
+                            <img src="assets/img/portfolio/asian-hornet/portfolio-1.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Asian Hornet Detector</h4>
+                        <p>AI</p>
+                        <!-- <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a> -->
+                        <a href="/asian-hornet" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card filter-web filter-app">
+                    <div class="portfolio-img">
+                        <a href="/surfrider" class="details-link" title="More Details">
+                            <img src="assets/img/portfolio/surfrider/portfolio-1.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>IA Pau</h4>
+                        <p>Challenge</p>
+                        <!-- <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a> -->
+                        <a href="/surfrider" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-img">
+                        <a href="/everimpact" class="details-link" title="More Details">
+                            <img src="assets/img/portfolio/everimpact/portfolio-1.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Technical Assessment</h4>
+                        <p>AI</p>
+                        <!-- <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a> -->
+                        <a href="/everimpact" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <ul id="portfolio-flters" class="d-flex justify-content-center">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">AI</li>
-          <li data-filter=".filter-web">Challenge</li>
-        </ul>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img">
-                <a href="/golf-booking-app" class="details-link" title="More Details">
-                    <img src="assets/img/portfolio/golf-booking-app/portfolio-1.png" class="img-fluid" alt="">
-                </a>
-            </div>
-            <div class="portfolio-info">
-              <h4>Golf Booking App</h4>
-              <p>App</p>
-              <!-- <a href="assets/img/portfolio/golf-booking-app/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Golf Booking App"><i class="bx bx-plus"></i></a> -->
-              <a href="/golf-booking-app" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img">
-                <a href="/mastermind" class="details-link" title="More Details">
-                    <img src="assets/img/portfolio/mastermind/mastermind.png" width="500px" height="500px" class="img-fluid" alt="">
-                </a>
-            </div>
-            <div class="portfolio-info">
-              <h4>Mastermind</h4>
-              <p>App</p>
-              <!-- <a href="assets/img/portfolio/mastermind/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Mastermin"><i class="bx bx-plus"></i></a> -->
-              <a href="/mastermind" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img">
-                <a href="/euromillions-api" class="details-link" title="More Details">
-                    <img src="assets/img/logo/euromillions.png" class="img-fluid" alt="">
-                </a>
-            </div>
-            <div class="portfolio-info">
-              <h4>EuroMillions API</h4>
-              <p>AI</p>
-              <!-- <a href="assets/img/portfolio/euromillions-api/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="EuroMillions API"><i class="bx bx-plus"></i></a> -->
-              <a href="/euromillions-api" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img">
-                <a href="/daily-coding-problem" class="details-link" title="More Details">
-                    <img src="assets/img/logo/daily-coding-problem.png" class="img-fluid" alt="">
-                </a>
-            </div>
-            <div class="portfolio-info">
-              <h4>Daily Coding Problem</h4>
-              <p>Challenge</p>
-              <!-- <a href="assets/img/portfolio/daily-coding-problem/portfolio-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Daily Coding Problem"><i class="bx bx-plus"></i></a> -->
-              <a href="/daily-coding-problem" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card filter-app">
-            <div class="portfolio-img">
-                <a href="/homer-bot" class="details-link" title="More Details">
-                    <img src="assets/img/portfolio/homer-bot/portfolio-1.png" class="img-fluid" alt="">
-                </a>
-            </div>
-            <div class="portfolio-info">
-              <h4>Homer Bot</h4>
-              <p>AI</p>
-              <!-- <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a> -->
-              <a href="/homer-bot" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img">
-                <a href="/asian-hornet" class="details-link" title="More Details">
-                    <img src="assets/img/portfolio/asian-hornet/portfolio-1.png" class="img-fluid" alt="">
-                </a>
-            </div>
-            <div class="portfolio-info">
-              <h4>Asian Hornet Detector</h4>
-              <p>AI</p>
-              <!-- <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a> -->
-              <a href="/asian-hornet" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card filter-web filter-app">
-            <div class="portfolio-img">
-                <a href="/surfrider" class="details-link" title="More Details">
-                    <img src="assets/img/portfolio/surfrider/portfolio-1.png" class="img-fluid" alt="">
-                </a>
-            </div>
-            <div class="portfolio-info">
-              <h4>IA Pau</h4>
-              <p>Challenge</p>
-              <!-- <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a> -->
-              <a href="/surfrider" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
     </section><!-- End My Portfolio Section -->
     
 

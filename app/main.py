@@ -75,6 +75,14 @@ def portfolio_hornet(request: Request):
 def portfolio_surfrider(request: Request):
     return templates.TemplateResponse("portfolio-surfrider.html", context={'request': request})
 
+@app.get("/everimpact", response_class=HTMLResponse)
+def portfolio_surfrider(request: Request):
+    return templates.TemplateResponse("portfolio-everimpact.html", context={'request': request})
+
+@app.get("/everimpact-presentation", response_class=FileResponse)
+def download_paper(request: Request):
+    return os.path.join(MAIN_DIRECTORY, "assets", "file", "everimpact.pdf")
+
 @app.post("/contact", response_class=PlainTextResponse)
 def send_email(
     email: str = Form(),
