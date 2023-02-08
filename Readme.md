@@ -1,7 +1,7 @@
 # My portfolio
 
 <div align="center">
-    <img src="assets/img/logo/fastapi.png" alt="fastapi-logo" width="300"/><img src="assets/img/logo/bootstrap.png" alt="Bootstrap-logo" width="300"/>
+    <img src="app/assets/img/logo/fastapi.png" alt="fastapi-logo" width="300"/><img src="app/assets/img/logo/bootstrap.png" alt="Bootstrap-logo" width="300"/>
 </div>
 
 
