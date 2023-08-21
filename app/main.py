@@ -18,11 +18,11 @@ from fastapi import Form, Request
 
 MAIN_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 TITLE = 'Portfolio'
-CONTACTS = 'baptiste.u@gmail.com'
+CONTACTS = 'everfrost314@gmail.com'
 URL_DOC = "/redoc"
 URL_SWAGGER = "/docs"
 
-templates = Jinja2Templates("./app/templates")
+templates = Jinja2Templates("./templates")
 
 app = FastAPI(
     title = TITLE,
@@ -33,7 +33,7 @@ app = FastAPI(
 
 handler = Mangum(app)
 
-app.mount("/assets", StaticFiles(directory="./app/assets"), name="assets")
+app.mount("/assets", StaticFiles(directory="./assets"), name="assets")
 
 @app.get("/", response_class=HTMLResponse)
 def serve_home(request: Request):
